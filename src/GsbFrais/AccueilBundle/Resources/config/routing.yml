@@ -1,0 +1,8 @@
+gsb_frais_accueil:
+    path:     /
+    defaults: { _controller: GsbFraisAccueilBundle:Accueil:index }
+
+
+gsb_frais_accueil_deco:
+    path:     /gsb
+    defaults: { _controller: GsbFraisAccueilBundle:Accueil:deconnexion }

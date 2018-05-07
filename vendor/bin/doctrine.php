@@ -1,0 +1,1 @@
+/var/www/html/GitGsbFrais/vendor/doctrine/orm/bin/doctrine.php

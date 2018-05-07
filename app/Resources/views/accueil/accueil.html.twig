@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {% block stylsheet %}
+    {{ parent() }}
+        <link rel="stylesheet" href="{{ asset('assets/css/styleAccueil.css') }}">
+
+    {% endblock %}
+
+    {% block header %}
+        {{ parent() }}
+    {% endblock header%}
+            {#Cody il m'attends pas c'est un chenapant*#}
+    {% block main %}
+        <div class="container1">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container2">
+                    <h1 class="display-4">GsbFrais</h1>
+                    <hr>
+                    <p class="lead">Cette application est déstinée aux visiteurs médicaux et au personnel du service comptable.</p>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block footer %}
+        {{ parent() }}
+    {% endblock footer %}
+
+    {% block javascripts %}
+        {{ parent() }}
+    {% endblock javascripts %}
+
+{% endblock %}

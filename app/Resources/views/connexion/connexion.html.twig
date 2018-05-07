@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {% block stylsheet %}
+        {{ parent() }}
+        <link href="{{ asset('assets/css/style.css') }}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('assets/css/styleConnexion.css') }}" type="text/css" rel="stylesheet">
+
+    {% endblock %}
+
+    {% block header %}
+    {{ parent() }}
+    {% endblock header %}
+    {% block  main %}
+        <div class="container1">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container2">
+                    <div class="container">
+                        <h1>Connexion</h1><br>
+                        <div class="container-fluid">
+                            {{ form_start(form) }}
+                                <div class="form-group">
+                                    {{ form_row(form.login) }}
+                                </div>
+                                <div class="form-group">
+                                    {{ form_row(form.mdp) }}
+                                </div>
+                                <div class="form-group">
+                                    {{ form_row(form.choices) }}
+                                </div>
+                                <br>
+                                <div id="divSave">
+                                {{ form_row(form.save) }}
+                                </div>
+                            {{ form_end(form) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    {% endblock %}
+
+    {% block footer %}
+        {{ parent() }}
+    {% endblock footer %}
+
+    {% block javascripts %}
+        {{ parent() }}
+    {% endblock javascripts %}
+
+{% endblock %}

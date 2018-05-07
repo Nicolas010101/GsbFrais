@@ -1,0 +1,32 @@
+gsb_profil_homepage:
+    path:     /profil
+    defaults: { _controller: GsbFraisProfilBundle:GestionProfil:index }
+
+gsb_profil_homepage_modif:
+    path:     /profil1
+    defaults: { _controller: GsbFraisProfilBundle:GestionProfil:modifCpt }
+
+
+gsb_profil_homepage_modif_mdp:
+    path:     /profil2
+    defaults: { _controller: GsbFraisProfilBundle:GestionProfil:modifMdp }
+
+gsb_profil_saisie_frais:
+    path:     /saisieFrais
+    defaults: { _controller: GsbFraisProfilBundle:SaisirFrais:saisir}
+
+gsb_profil_afficher_mois:
+    path:     /fraisDuMois
+    defaults: { _controller: GsbFraisProfilBundle:FraisDuMois:afficher}
+
+gsb_profil_historique:
+    path:     /historique
+    defaults: { _controller: GsbFraisProfilBundle:Historique:selectionner}
+
+gsb_profil_historique_selection:
+    path:     /historiqueSelection/{date}
+    defaults: { _controller: GsbFraisProfilBundle:Historique:visu}
+
+gsb_suppression:
+    path:     /saisieFrais1/{idHorsForfait}
+    defaults: { _controller: GsbFraisProfilBundle:SaisirFrais:supprimer}
